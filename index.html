@@ -5,14 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-biglietto-treno</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <div>
+        <input type="text" id="FnSname" placeholder="Nome e Cognome Passeggero">
+        <input type="text" id="distance" placeholder="Km da percorrere">
+        <input type="number" name="" id="age" placeholder="Età passeggero">
+        <input type="submit" id="submit">
+        <button onClick="window.location.reload();">Annulla</button>
+    </div>
 
-    <input type="text" id="FnSname" placeholder="Nome e Cognome Passeggero">
-    <input type="text" id="distance" placeholder="Km da percorrere">
-    <input type="number" name="" id="age" placeholder="Età passeggero">
-    <input type="submit" id="submit">
-    <button onClick="window.location.reload();">Annulla</button>
+    <div class="biglietto">
+        <div class="nome-passeggero">
+            <h3>NOME PASSEGGERO</h3>
+            <span id="passenger_name"></span>
+        </div>
+        
+        <div class="offerta border">
+            <h3>Offerta:</h3>
+            <span id="offer"></span></h2>
+        </div>
+
+        <div class="carrozza border">
+            <h3>Carrozza</h3>
+            <span id="cab"></span>
+        </div>
+
+        <div class="codice_cp border">
+            <h3>Codice CP</h3>
+            <span id="CP_code"></span>
+        </div>
+
+        <div class="costo_biglietto border">
+            <h3>Costo biglietto</h3>
+            <span id="prezzo-finale"></span>
+        </div>
+
+    </div>
+       
+   
       
 
 

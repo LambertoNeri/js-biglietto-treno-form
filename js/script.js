@@ -26,45 +26,63 @@ while (isNaN(distance = prompt("quanti kilometri devi percorrere? (solo numeri)"
 var age;
 while (isNaN(age = prompt("quanti anni hai (solo numeri)")));  */
 
-const FnSname = document.getElementById('FnSname');
-const distance = document.getElementById('distance');
-const age = document.getElementById('age'); 
-const price = parseFloat (distance * 0.21);   
-const discount18 = parseFloat ( price * .20);
-const discount65 = parseFloat ( price * .40);  
+
+
+ 
 
 
 
 var btn = document.getElementById('submit');
-btn.addEventListener('click', func);
+btn.addEventListener('click',
 
-function func() {
-  
-    console.log('Nome Passegero:', document.getElementById("FnSname").value)
-    console.log('Distanza da percorrere:', document.getElementById("distance").value)
-    console.log('Età Passeggero:', document.getElementById("age").value)
-}
+    function() {
+        const FnSname = document.getElementById("FnSname").value;
+        const distance = (document.getElementById("distance").value);
+        const age = (document.getElementById("age").value); 
+        const price = parseFloat (distance * 0.21);   
+        const discount18 = parseFloat ( price * .20);
+        const discount65 = parseFloat ( price * .40); 
+        console.log('Nome Passegero:', FnSname)
+        console.log('Distanza da percorrere:', distance)
+        console.log('Età Passeggero:', age) 
+        console.log ('prezzo biglietto intero', price);
+        console.log ('da scontare x 18enne',  discount18);
+        console.log ('sconto anziani', discount65);
+        document.getElementById("passenger_name").innerHTML = FnSname; 
+        
+        if (age < 18) {
+            console.log('Prezzo biglietto scontato minori 18', (price - discount18).toFixed(2) );
+            document.getElementById("prezzo-finale").innerHTML = (price - discount18).toFixed(2);
+        } else if (age >= 65 ) {
+            console.log ('prezzo scontato anzianità ',  (price - discount65).toFixed(2));
+            document.getElementById("prezzo-finale").innerHTML = (price - discount65).toFixed(2);
+        } else {
+            console.log ('prezzo intero', price.toFixed(2))
+            document.getElementById("prezzo-finale").innerHTML = price.toFixed(2);
+        }
 
-console.log ('distanza', distance);
-console.log ('età', age);  
-console.log ('prezzo biglietto intero', price);
-console.log ('da scontare x 18enne',  discount18);
-console.log ('sconto anziani', discount65);  
+
+
+        if (age < 18) {
+            document.getElementById("offer").innerHTML = ('Biglietto under 18');
+        } else if (age >= 65 ) {
+            document.getElementById("offer").innerHTML = ('Biglietto over 64');
+        } else {
+            document.getElementById("offer").innerHTML = ('Biglietto standard');
+        }
+
+        document.getElementById("cab").innerHTML = Math.floor(Math.random() * 10);
+        document.getElementById("CP_code").innerHTML = Math.floor(Math.random() * 100000);
+        
+    }
+
+);
+
+ 
 
 
 
 
-
-if (age < 18) {
-    console.log('Prezzo biglietto scontato minori 18', (price - discount18).toFixed(2) );
-    document.getElementById("prezzo_finale").innerHTML = (price - discount18).toFixed(2);
-} else if (age > 65 ) {
-    console.log ('prezzo scontato anzianità ',  (price - discount65).toFixed(2));
-    document.getElementById("prezzo_finale").innerHTML = (price - discount65).toFixed(2);
-} else {
-    console.log ('prezzo intero', price.toFixed(2))
-    document.getElementById("prezzo_finale").innerHTML = price.toFixed(2);
-}
 
 
 
