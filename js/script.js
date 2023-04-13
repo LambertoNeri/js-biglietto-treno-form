@@ -26,27 +26,23 @@ while (isNaN(distance = prompt("quanti kilometri devi percorrere? (solo numeri)"
 var age;
 while (isNaN(age = prompt("quanti anni hai (solo numeri)")));  */
 
-
+const FnSname = document.getElementById('FnSname');
+const distance = document.getElementById('distance');
+const age = document.getElementById('age'); 
 const price = parseFloat (distance * 0.21);   
 const discount18 = parseFloat ( price * .20);
 const discount65 = parseFloat ( price * .40);  
 
-const fname = document.getElementById ("fname");
-element.addEventListener ('click',
-    function() {
-
-    }
-);
 
 
 var btn = document.getElementById('submit');
 btn.addEventListener('click', func);
 
 function func() {
-const FnSname = ;
-  console.log('Nome Passegero:', document.getElementById("FnSname").value)
-  console.log('Distanza da percorrere:', document.getElementById("distance").value)
-  console.log('Età Passeggero:', document.getElementById("age").value)
+  
+    console.log('Nome Passegero:', document.getElementById("FnSname").value)
+    console.log('Distanza da percorrere:', document.getElementById("distance").value)
+    console.log('Età Passeggero:', document.getElementById("age").value)
 }
 
 console.log ('distanza', distance);
@@ -54,7 +50,7 @@ console.log ('età', age);
 console.log ('prezzo biglietto intero', price);
 console.log ('da scontare x 18enne',  discount18);
 console.log ('sconto anziani', discount65);  
-console.log ('Nome e cognome cliente', fname);
+
 
 
 
