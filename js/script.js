@@ -71,7 +71,7 @@ btn.addEventListener('click',
             document.getElementById("offer").innerHTML = ('Biglietto standard');
         }
 
-        document.getElementById("cab").innerHTML = Math.floor(Math.random() * 10);
+        document.getElementById("cab").innerHTML = Math.floor(Math.random() * 10 + 1);
         document.getElementById("CP_code").innerHTML = Math.floor(Math.random() * 100000);
         
     }

@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body{
     background-color: #B91450;
@@ -32,6 +28,10 @@ body{
     justify-content: center;
 }
 
+
+
+
+
 label{
     color: #B91550;
     text-align: center;
@@ -40,12 +40,13 @@ label{
 
 
 .insert{
-    border-color: #B91550;
+    border: 2px solid #B91550;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-size: 1.3rem;
     text-align: center;
     margin-top: 0.5rem;
+    border-radius: 7px;
 }
     
 .biglietto{
