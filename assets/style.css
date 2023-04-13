@@ -4,13 +4,61 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #B91450;
+}
+
+.titolone{
+    color: white;
+    text-align: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(33% - 3rem)  ;
+}
+
+.container{
+    background-color: white;
+    height: 200px;
+    border-radius: 20px;
+    margin-inline: auto;
+    padding: 1rem;
+    max-width: 80%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label{
+    color: #B91550;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.insert{
+    border-color: #B91550;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+    
 .biglietto{
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
-    
+    margin-inline: auto;
+    margin-top: 4rem;
+    max-width: 80%;
+    background-color: white;
+    height: 200px;
+    padding: 1rem;
 }
+    
 
 .nome-passeggero{
     height: 100px;

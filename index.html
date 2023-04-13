@@ -8,12 +8,31 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div>
-        <input type="text" id="FnSname" placeholder="Nome e Cognome Passeggero">
-        <input type="text" id="distance" placeholder="Km da percorrere">
-        <input type="number" name="" id="age" placeholder="Età passeggero">
-        <input type="submit" id="submit">
-        <button onClick="window.location.reload();">Annulla</button>
+    <h1 class="titolone">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+
+        <div class="flex-column">
+            <label class="labella" for="FnSname">Nome e cognome</label>
+            <input class="insert" type="text" id="FnSname">
+        </div>
+
+       <div class="flex-column">
+            <label class="labella" for="distance">Km da percorrere</label>
+            <input class="insert" type="text" id="distance">
+       </div>
+
+       <div class="flex-column">
+            <label class="labella" for="age">Fascia d'età</label>
+            <input class="insert" type="number" name="" id="age">
+       </div>
+
+       <div>
+            <input type="submit" id="submit">
+            <button onClick="window.location.reload();">Annulla</button>
+       </div>
+     
+
+        
     </div>
 
     <div class="biglietto">
@@ -47,9 +66,6 @@
    
       
 
-
-
-    
     <script src="js/script.js"></script>
 </body>
 </html>
